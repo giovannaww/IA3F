@@ -26,7 +26,7 @@ function mostraPergunta(){
     caixaPerguntas.textContent = perguntaAtual.enunciado
     mostraAlternativas();
 }
-funcion mostraAlternativas(){
+function mostraAlternativas(){
 
 }
 
