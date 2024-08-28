@@ -9,8 +9,8 @@ const perguntas = [ //serve para abrir lista de perguntas
         alternativas: [" SIM ","NÃO "]
     },
     {
-        enunciado: "Pergunta 2",
-        alternativas: ["Alternativa 1","Alternativa 2"]
+        enunciado: "A inteligência artificial pode ser considerada confiavel no meio da Medicina?",
+        alternativas: [" SIM "," NÃO "]
     },
     {
         enunciado: "Pergunta 3",
