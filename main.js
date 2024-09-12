@@ -13,9 +13,21 @@ const perguntas = [ //serve para abrir lista de perguntas
         alternativas: [" SIM "," NÃO "]
     },
     {
-        enunciado: "Pergunta 3",
-        alternativas: ["Alternativa 1","Alternativa 2"]
-    }
+        enunciado: "Você acredita que pode utilizar a inteligencia artificial no dia a dia?",
+        alternativas: [" SIM "," NÃO "]
+    },
+    {
+        enunciado: " Você pode usar a inteligencia artificial para abrir seu proprio negocio?",
+        alternativas: [" SIM "," NÃO "]
+    },
+    {
+        enunciado: "A Inteligencia Artificial é útil na sua rotina? ",
+        alternativas: [" SIM "," NÃO "]
+    },
+    {
+        enunciado: "Daqui 10 anos você acredita que a inteligencia artificial pode estar dominando o mundo?",
+        alternativas: [" SIM "," NÃO "]
+    },
 ]
 
 let posicao = 0;
