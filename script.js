@@ -6,27 +6,27 @@ const caixaResultado = document.querySelector('.caixa-resultado');
 const perguntas = [ //serve para abrir lista de perguntas
     {//abre o objeto das perguntas
         enunciado: "Você acredita na Inteligência Artificial?",
-        alternativas: [" SIM ","NÃO "]
+            alternativas: [{texto: " SIM ", afirmação: "afirmação da alternativas"} , { texto: "NÃO ",afirmação: "afirmação da alternativas"} ]
     },
     {
         enunciado: "A inteligência artificial pode ser considerada confiavel no meio da Medicina?",
-        alternativas: [" SIM "," NÃO "]
+        alternativas: [{texto: " SIM ", afirmação: "afirmação da alternativas"},{ texto: "NÃO ",afirmação: "afirmação da alternativas"}]
     },
     {
         enunciado: "Você acredita que pode utilizar a inteligencia artificial no dia a dia?",
-        alternativas: [" SIM "," NÃO "]
+        alternativas: [{texto: " SIM ", afirmação: "afirmação da alternativas"},{ texto: "NÃO ",afirmação: "afirmação da alternativas"}]
     },
     {
         enunciado: " Você pode usar a inteligencia artificial para abrir seu proprio negocio?",
-        alternativas: [" SIM "," NÃO "]
+        alternativas: [{texto: " SIM ", afirmação: "afirmação da alternativas"},{ texto: "NÃO ",afirmação: "afirmação da alternativas"}]
     },
     {
         enunciado: "A Inteligencia Artificial é útil na sua rotina? ",
-        alternativas: [" SIM "," NÃO "]
+        alternativas: [{texto: " SIM ", afirmação: "afirmação da alternativas"},{ texto: "NÃO ",afirmação: "afirmação da alternativas"}]
     },
     {
         enunciado: "Daqui 10 anos você acredita que a inteligencia artificial pode estar dominando o mundo?",
-        alternativas: [" SIM "," NÃO "]
+        alternativas: [{texto: " SIM ", afirmação: "afirmação da alternativas"},{ texto: "NÃO ",afirmação: "afirmação da alternativas"}]
     },
 ]
 
