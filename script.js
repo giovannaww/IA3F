@@ -43,11 +43,14 @@ function mostraAlternativas(){
     for(const alternativa of perguntaAtual.alternativas){
         const botaoAlternativas = document.createElement("button");
         botaoAlternativas.textContent = alternativa.texto;
-        botaoAlternativas.addEventListener("click",() =>respostaselecionada(alternativas) {
-          posicao++;
-          mostraPergunta();  
-        });
+        botaoAlternativas.addEventListener("click",() =>respostaselecionada(alternativas));
         caixaAlternativas.appendChild(botaoAlternativas);
     }
+}
+function respostaselecionada(opcaoselecionada){
+    const afirmação = opcaoselecionada.afirmação
+    historiafinal = afirmação
+    posicao++;
+    mostraPergunta();
 }
 mostraPergunta();
