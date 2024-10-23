@@ -2,7 +2,7 @@
     --cor-fundo: #DDA0DD;
     --cor-principal: #DB7093;
     --cor-secunaria: #4682B4;
-    --cor-destaque: #800000;
+    --cor-destaque: #b41964;
     --cor-texto: #000000;
 }
 body{
@@ -22,4 +22,15 @@ body{
 }
 h1{
     color: var(--cor-destaque);
+}
+button{
+    background-color: var(--cor-destaque);
+    color: var(--cor-texto);
+    border: nome;
+    border-radius: 15px;
+    padding: 15px;
+}
+button:hover{
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
 }

@@ -2,9 +2,10 @@ const caixaPrincipal = document.querySelector('.caixa-principal');
 const caixaPerguntas = document.querySelector('.caixa-perguntas');
 const caixaAlternativas = document.querySelector('.caixa-alternativas');
 const caixaResultado = document.querySelector('.caixa-resultado');
+const textoResultado = document.querySelector ('.texto-reultado');
 
 const perguntas = [ //serve para abrir lista de perguntas
-    {//abre o objeto das perguntas
+    {   //abre o objeto das perguntas
         enunciado: "Você acredita na Inteligência Artificial?",
             alternativas: [{texto: " SIM ", afirmação: "afirmação da alternativas"} , { texto: "NÃO ",afirmação: "afirmação da alternativas"} ]
     },
@@ -35,8 +36,13 @@ let perguntaAtual;
 let hitoriafinal = "";
 
 function mostraPergunta(){
+    if (posicao >= perguntas.length){
+        mostraResultado();
+        return;
+    }
     perguntaAtual = perguntas[posicao];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
+    caixaAlternativas.textContent = perguntaAtual.enunciado;
     mostraAlternativas();
 }
 function mostraAlternativas(){
@@ -47,10 +53,15 @@ function mostraAlternativas(){
         caixaAlternativas.appendChild(botaoAlternativas);
     }
 }
-function respostaselecionada(opcaoselecionada){
+function respostaSelecionada(opcaoselecionada){
     const afirmação = opcaoselecionada.afirmação
     historiafinal = afirmação
     posicao++;
     mostraPergunta();
+}
+function mostraResultados(){
+    caixaPerguntas.textContent = "Num futuro próximo...";
+    textoResultado.textContent = hitoriafinal;
+    caixaAlternativas.textContent = "";
 }
 mostraPergunta();
